@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Warm cream/beige background reflecting the salon walls */
+  --color-background: #FCFAF6;
+  --color-surface-lowest: #F6F4EE;
+  --color-surface: #FFFFFF;
+  --color-surface-low: #F0EBE1;
+  --color-surface-container: #E8E1D5;
+  --color-surface-high: #DED3C3;
+  --color-surface-highest: #D1C2AD;
+  
+  /* Wood tones reflecting the mirrors and ceiling beams */
+  --color-primary: #B28859;
+  --color-primary-container: #8E653A;
+  --color-on-primary: #FFFFFF;
+  
+  /* Dark leather text for contrast against the light background */
+  --color-on-surface: #262422;
+  --color-outline: #C8BFB2;
+  --color-outline-variant: #DDD7CE;
+
+  /* Fonts: Classy Serif for headers, clean sans for body */
+  --font-display: "Playfair Display", serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .subtle-border {
+    border: 1px solid var(--color-outline-variant);
+  }
+  .glass-panel {
+    background-color: color-mix(in srgb, var(--color-surface) 85%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-outline-variant);
+  }
+  .wood-gradient {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-container));
+  }
+  .soft-shadow {
+    box-shadow: 0px 8px 30px rgba(142, 101, 58, 0.08);
+  }
+  .warm-glow {
+    box-shadow: 0px 0px 40px rgba(178, 136, 89, 0.15);
+  }
+}
