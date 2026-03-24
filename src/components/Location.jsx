@@ -33,7 +33,7 @@ const Location = () => {
           <div className="order-1 lg:order-2 soft-shadow subtle-border relative rounded-2xl overflow-hidden bg-surface-lowest">
             <div className="relative w-full pb-[75%] sm:pb-[60%] lg:pb-[100%] h-0">
               <iframe 
-                src="https://maps.google.com/maps?q=Hicks%20Men%20Salon,%20Kausar%20Colony,%20Bahawalpur&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                src="https://maps.google.com/maps?q=Fandi%20Center,%20Kausar%20Colony,%20Bahawalpur&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                 className="absolute top-0 left-0 w-full h-full border-0 rounded-2xl"
                 allowFullScreen="" 
                 loading="lazy" 
