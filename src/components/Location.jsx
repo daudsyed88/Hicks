@@ -33,8 +33,8 @@ const Location = () => {
           <div className="order-1 lg:order-2 soft-shadow subtle-border relative rounded-2xl overflow-hidden bg-surface-lowest">
             <div className="relative w-full pb-[75%] sm:pb-[60%] lg:pb-[100%] h-0">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13963.811568205463!2d71.66699131650893!3d29.4005086782433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b91a7c5c56783%3A0x67ee1c55bcaf0dcb!2sKausar%20Colony%2C%20Bahawalpur%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
-                className="absolute top-0 left-0 w-full h-full border-0"
+                src="https://maps.google.com/maps?q=Hicks%20Men%20Salon,%20Kausar%20Colony,%20Bahawalpur&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                className="absolute top-0 left-0 w-full h-full border-0 rounded-2xl"
                 allowFullScreen="" 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"

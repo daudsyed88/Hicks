@@ -147,12 +147,12 @@ const Services = () => {
 
             <div className="grid gap-6">
               {activeCategory?.items.map((item, idx) => (
-                <div key={idx} className="flex justify-between items-center group">
+                <div key={idx} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-0 group">
                   <span className="font-body text-lg font-medium text-on-surface group-hover:text-primary transition-colors">
                     {item.name}
                   </span>
                   <div className="hidden sm:block flex-1 border-b border-dashed border-outline-variant mx-4 md:mx-6 translate-y-2 opacity-50 group-hover:border-primary transition-colors"></div>
-                  <div className="flex items-center gap-4 sm:gap-6 ml-4 sm:ml-0">
+                  <div className="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-4 sm:gap-6">
                     <span className="font-display font-bold text-xl text-primary whitespace-nowrap">
                       <span className="text-sm text-on-surface-variant mr-1">Rs</span>
                       {item.price}
